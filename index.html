@@ -39,21 +39,21 @@
       <h2 class="my-5 " >enter your information</h2>
       <div class="section" id="section1">
         <div class="form-group  mb-3">
-          <label for="exampleInputName">Name</label>
+          <label for="InputName">Name</label>
           <input
             type="text"
             class="form-control"
-            id="exampleInputName"
+            id="InputName"
             aria-describedby="emailHelp"
             placeholder="Your Name"
           />
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Last Name</label>
+          <label for="InputLastName">Last Name</label>
           <input
             type="text"
             class="form-control"
-            id="exampleInputlastName"
+            id="InputLastName"
             placeholder="Your Last Name"
           />
         </div>
@@ -74,21 +74,21 @@
         <div class="section d-none" id="section2">
            
           <div class="form-group  mb-3">
-            <label for="exampleInputEmail">Email Address</label>
+            <label for="InputEmail">Email Address</label>
             <input
               type="email"
               class="form-control"
-              id="exampleInputEmail"
+              id="InputEmail"
               aria-describedby="emailHelp"
               placeholder="Enter Your email"
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputtel">Number Phone </label>
+            <label for="Inputtel">Number Phone </label>
             <input
               type="tel"
               class="form-control"
-              id="exampleInputtel"
+              id="Inputtel"
               placeholder="You Number"
             />
           </div>
@@ -113,13 +113,14 @@
         </div>
 
         <!-- siction 3  -->
+        
         <div class="section d-none" id="section3">
           <div class="form-group  mb-3">
-            <label for="exampleInputPassword">Password</label>
+            <label for="InputPassword">Password</label>
             <input
               type="password"
               class="form-control"
-              id="exampleInputPassword"
+              id="InputPassword"
               aria-describedby="emailHelp"
               placeholder="password"
             />
@@ -138,15 +139,36 @@
             <button
               type="button"
               class="btn btn-primary"
-              onclick="previousSection(1)"
+              onclick="nextSection(2)"
             >
             PREVIOUS
             </button>
             
             <button
+              type="button"
+              class="btn btn-primary"
+              onclick="nextSection(4)"
+            >
+            NEXT
+            </button>
+          </div>
+        </div>
+
+        <!-- siction 4 -->
+
+        <div class="section d-none" id="section4"> 
+         <div>
+          <h2 class="input" id="Name"></h2>
+          <h2 class="input" id="LastName"></h2>
+          <h2 class="input" id="email"></h2>
+          <h2 class="input" id="tel"></h2>
+          <h2 class="input" id="password"></h2>
+         </div>
+            
+            <button
               type="submit"
               class="btn btn-primary"
-              onclick="nextSection(3)"
+              onclick="submiform(event)"
             >
             SUBMIT
             </button>
