@@ -1,0 +1,12 @@
+:root {
+    --dark-color: #19283f;
+}
+body{
+    background-image: url(../image/pexels-felixmittermeier-956999.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+navbar{
+    
+    background-color: var(--dark-color);
+}

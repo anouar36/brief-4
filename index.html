@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/bondi.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css.map" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+   
+    <script src="./assets/js/index.js"></script>
+
+    <nav class="navbar bg-primary text-white ">
+      <div class="container">
+        <div class="container d-flex justify-content-center">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="nav-link active mx-auto mt-2" aria-current="page" href="#"
+            >Home</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- -----------------------section-1-------------------- -->
+<div class="d-flex justify-content-center min-vh-100 align-items-center ">
+    <form
+      class=" px-5  bg-dark  text-white rounded bg-opacity-75" style="height: 400px;"
+    >
+      <!-- siction 1 -->
+      <h2 class="my-5 " >enter your information</h2>
+      <div class="section" id="section1">
+        <div class="form-group  mb-3">
+          <label for="exampleInputName">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputName"
+            aria-describedby="emailHelp"
+            placeholder="Your Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputlastName"
+            placeholder="Your Last Name"
+          />
+        </div>
+
+        <div class="d-flex justify-content-end mt-2">
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="nextSection(2)"
+          >
+            NEXT
+          </button>
+        </div>
+      </div>
+
+      <!--------------------------section 2--------------------------->
+
+        <div class="section d-none" id="section2">
+           
+          <div class="form-group  mb-3">
+            <label for="exampleInputEmail">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail"
+              aria-describedby="emailHelp"
+              placeholder="Enter Your email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputtel">Number Phone </label>
+            <input
+              type="tel"
+              class="form-control"
+              id="exampleInputtel"
+              placeholder="You Number"
+            />
+          </div>
+
+          <div class="d-flex justify-content-between mt-2">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="previousSection(1)"
+            >
+            PREVIOUS
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="nextSection(3)"
+            >
+              NEXT
+            </button>
+          </div>
+        </div>
+
+        <!-- siction 3  -->
+        <div class="section d-none" id="section3">
+          <div class="form-group  mb-3">
+            <label for="exampleInputPassword">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword"
+              aria-describedby="emailHelp"
+              placeholder="password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputVP">Verify Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputVP"
+              placeholder="verify password"
+            />
+          </div>
+
+          <div class="d-flex justify-content-between mt-2">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="previousSection(1)"
+            >
+            PREVIOUS
+            </button>
+            
+            <button
+              type="submit"
+              class="btn btn-primary"
+              onclick="nextSection(3)"
+            >
+            SUBMIT
+            </button>
+          </div>
+        </div>
+
+        
+        
+    </form>
+</div>
+  </body>
+</html>
