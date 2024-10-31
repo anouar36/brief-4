@@ -23,6 +23,7 @@ document.getElementById("LastName").innerHTML= "last Name : "+lastname;
 document.getElementById("email").innerHTML= "Email : "+email;
 document.getElementById("tel").innerHTML= "telphone : "+tel;
 document.getElementById("password").innerHTML="Name : "+Password;
+showSection(4)
 }
 
 

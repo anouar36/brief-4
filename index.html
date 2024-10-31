@@ -16,10 +16,9 @@
     <title>Document</title>
   </head>
   <body>
-   
     <script src="./assets/js/index.js"></script>
 
-    <nav class="navbar bg-primary text-white ">
+    <nav class="navbar bg-primary text-white">
       <div class="container">
         <div class="container d-flex justify-content-center">
           <a class="navbar-brand" href="#">Navbar</a>
@@ -31,49 +30,51 @@
     </nav>
 
     <!-- -----------------------section-1-------------------- -->
-<div class="d-flex justify-content-center min-vh-100 align-items-center ">
-    <form
-      class=" px-5  bg-dark  text-white rounded bg-opacity-75" style="height: 400px;"
-    >
-      <!-- siction 1 -->
-      <h2 class="my-5 " >enter your information</h2>
-      <div class="section" id="section1">
-        <div class="form-group  mb-3">
-          <label for="InputName">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="InputName"
-            aria-describedby="emailHelp"
-            placeholder="Your Name"
-          />
-        </div>
-        <div class="form-group">
-          <label for="InputLastName">Last Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="InputLastName"
-            placeholder="Your Last Name"
-          />
+    <div class="d-flex justify-content-center min-vh-100 align-items-center">
+      <form
+        class="px-5 mb-5 bg-dark text-white rounded bg-opacity-75"
+        style="height: 400px"
+      >
+        <!-- siction 1 -->
+       
+        <div class="section " id="section1">
+          <h2  class="h-25 justify-content-center mb-5">enter your information</h2>
+          <div class="form-group mb-5">
+            <label for="InputName">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="InputName"
+              aria-describedby="emailHelp"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="InputLastName">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="InputLastName"
+              placeholder="Your Last Name"
+            />
+          </div>
+
+          <div class="d-flex justify-content-end mt-2">
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="nextSection(2)"
+            >
+              NEXT
+            </button>
+          </div>
         </div>
 
-        <div class="d-flex justify-content-end mt-2">
-          <button
-            type="button"
-            class="btn btn-primary"
-            onclick="nextSection(2)"
-          >
-            NEXT
-          </button>
-        </div>
-      </div>
-
-      <!--------------------------section 2--------------------------->
+        <!--------------------------section 2--------------------------->
 
         <div class="section d-none" id="section2">
-           
-          <div class="form-group  mb-3">
+          <h2  class="h-25 justify-content-center mb-5">enter your information</h2>
+          <div class="form-group mb-5">
             <label for="InputEmail">Email Address</label>
             <input
               type="email"
@@ -99,7 +100,7 @@
               class="btn btn-primary"
               onclick="previousSection(1)"
             >
-            PREVIOUS
+              PREVIOUS
             </button>
 
             <button
@@ -113,9 +114,9 @@
         </div>
 
         <!-- siction 3  -->
-        
         <div class="section d-none" id="section3">
-          <div class="form-group  mb-3">
+          <h2  class="h-25 justify-content-center mb-5">enter your information</h2>
+          <div class="form-group mb-5">
             <label for="InputPassword">Password</label>
             <input
               type="password"
@@ -141,43 +142,44 @@
               class="btn btn-primary"
               onclick="nextSection(2)"
             >
-            PREVIOUS
+              PREVIOUS
             </button>
-            
+
             <button
               type="button"
               class="btn btn-primary"
-              onclick="nextSection(4)"
+              onclick="submiform(event)"
             >
-            NEXT
+              NEXT
             </button>
           </div>
         </div>
 
         <!-- siction 4 -->
 
-        <div class="section d-none" id="section4"> 
-         <div>
-          <h2 class="input" id="Name"></h2>
-          <h2 class="input" id="LastName"></h2>
-          <h2 class="input" id="email"></h2>
-          <h2 class="input" id="tel"></h2>
-          <h2 class="input" id="password"></h2>
-         </div>
-            
-            <button
-              type="submit"
-              class="btn btn-primary"
-              onclick="submiform(event)"
-            >
-            SUBMIT
-            </button>
+        <div class="section d-none" id="section4">
+          <div class=" d-flex justify-content-center">
+        <h2  class="mx-auto  mb-5">Verify your information</h2>
+      </div>
+          <div>
+            <h2 class="input" id="Name"></h2>
+            <h2 class="input" id="LastName"></h2>
+            <h2 class="input" id="email"></h2>
+            <h2 class="input" id="tel"></h2>
+            <h2 class="input" id="password"></h2>
           </div>
+<div class="d-flex justify-content-end mt-2">
+          <button
+            type="submit"
+            class="btn btn-primary"
+           
+          >
+          
+            SUBMIT
+          </button>
         </div>
-
-        
-        
-    </form>
-</div>
+        </div>
+      </form>
+    </div>
   </body>
 </html>
