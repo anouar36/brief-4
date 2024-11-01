@@ -22,7 +22,7 @@ document.getElementById("Name").innerHTML="Name : "+firstName;
 document.getElementById("LastName").innerHTML= "last Name : "+lastname;
 document.getElementById("email").innerHTML= "Email : "+email;
 document.getElementById("tel").innerHTML= "telphone : "+tel;
-document.getElementById("password").innerHTML="Name : "+Password;
+document.getElementById("password").innerHTML="Password : "+Password;
 showSection(4)
 }
 
